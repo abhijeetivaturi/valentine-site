@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom right, #ffd6e0, #ffeef5);
+  text-align: center;
+  overflow: hidden;
+}
+
+#app {
+  padding-top: 40px;
+}
+
+img {
+  width: 300px;
+  transition: 0.5s ease;
+}
+
+h1 {
+  color: #ff4d88;
+  max-width: 700px;
+  margin: auto;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  margin: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.blur {
+  filter: blur(20px);
+  transition: 1s ease;
+}
