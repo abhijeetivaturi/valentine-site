@@ -51,7 +51,7 @@ function noFlow() {
 function runawayStage(){
   render(`
     <img src="panda-sad100.png">
-    <h1>Final offer: Please say yes?</h1>
+    <h1>Final offer:: What if I offer to love you always, and spend all my energy to tell you, show you, just how much you mean to me on a daily basis? Please say yes and bring sunshine in my life and give me a chance to bring happiness in your life just like how you do, please?</h1>
     <button id="yesBtn" disabled>Yes</button>
     <button id="noBtn">No</button>
   `);
@@ -172,4 +172,5 @@ function reveal(){
 
 
 landing();
+
 
