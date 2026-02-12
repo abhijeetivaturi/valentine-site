@@ -10,7 +10,7 @@ function landing() {
   noLevel = 0;
   render(`
     <img src="panda-ponder.png">
-    <h1>Hi SLS, will you be my valentine?</h1>
+    <h1>Hi Soumya, will you be my valentine?</h1>
     <button onclick="yesPage()">Yes</button>
     <button onclick="noFlow()">No</button>
   `);
@@ -172,3 +172,4 @@ function reveal(){
 
 
 landing();
+
