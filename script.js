@@ -1,3 +1,14 @@
+let musicStarted = false;
+
+document.addEventListener("click", function () {
+  if (!musicStarted) {
+    const music = document.getElementById("bgMusic");
+    if (music) {
+      music.play();
+      musicStarted = true;
+    }
+  }
+});
 let noLevel = 0;
 let chaseStart = null;
 let revealClicks = 0;
@@ -172,5 +183,6 @@ function reveal(){
 
 
 landing();
+
 
 
