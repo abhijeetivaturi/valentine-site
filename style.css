@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ffe6f0, #ffd1dc, #ffe6f5);
+  background:  linear-gradient(135deg, #f3e8ff, #e9d5ff, #ddd6fe);
   background-size: 400% 400%;
   animation: bgShift 12s ease infinite;
   text-align: center;
@@ -83,3 +83,4 @@ body::after {
   0% { transform: translateY(0); }
   100% { transform: translateY(-120vh); }
 }
+
