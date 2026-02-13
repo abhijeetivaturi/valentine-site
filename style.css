@@ -69,3 +69,17 @@ button:last-of-type {
   filter: blur(20px);
   transition: 1.2s ease;
 }
+body::after {
+  content: "💖 💕 💘 💝 💓 💗 💞";
+  position: fixed;
+  bottom: -50px;
+  width: 100%;
+  font-size: 24px;
+  animation: floatHearts 15s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes floatHearts {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-120vh); }
+}
