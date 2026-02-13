@@ -1,9 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', cursive;
-  background: linear-gradient(to bottom right, #ffd6e0, #ffeef5);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #ffd1dc, #ffe6f5);
+  background-size: 400% 400%;
+  animation: bgShift 12s ease infinite;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 #app {
@@ -11,31 +19,53 @@ body {
 }
 
 img {
-  width: 300px;
-  transition: 0.5s ease;
+  width: 320px;
+  transition: all 0.6s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 h1 {
   color: #ff4d88;
-  max-width: 700px;
-  margin: auto;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 28px;
 }
 
 button {
-  padding: 12px 30px;
+  padding: 14px 36px;
   font-size: 18px;
   margin: 15px;
   border: none;
-  border-radius: 12px;
+  border-radius: 40px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 77, 136, 0.3);
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 77, 136, 0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:first-of-type {
+  background: linear-gradient(45deg, #ff4d88, #ff85a2);
+  color: white;
+}
+
+button:last-of-type {
+  background: white;
+  color: #ff4d88;
+  border: 2px solid #ff4d88;
 }
 
 .blur {
   filter: blur(20px);
-  transition: 1s ease;
+  transition: 1.2s ease;
 }
